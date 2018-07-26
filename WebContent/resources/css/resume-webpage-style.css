@@ -1,0 +1,218 @@
+  * {
+        box-sizing: border-box;
+    }
+
+    .section {
+        margin: auto;
+        box-shadow: 0 1vw 2vw grey;
+        padding: 1vw;
+        background-color: white;
+    }
+    
+    body {
+        font-family:"Times New Roman", Times, serif;
+        background-color: #ecf2f9;
+    }
+    
+    #titleblock {
+        text-align: center;
+        font-size: 2.4vw;
+    }
+    
+    .heading {
+        font-size: 2.2vw;
+        font-weight: bold;
+    }
+    
+    .bullet{
+        font-size: 1.9vw;
+    }
+    
+    .subbullet{
+        font-size: 1.7vw;
+    }
+    
+    #fullResumeButton{
+        position: fixed;
+        top: 1vw;
+    	right: 1.25vw;
+    	background-color: #333;
+    	color: white;
+    	border-style: none;
+    	border-radius: 0.35vw;
+    	text-decoration: underline;
+    	padding: 0.3vw 0.5vw;
+    	box-shadow: 0 0.3vw #999;
+    }
+    
+    #fullResumeButton:hover{
+    	background-color: #008CBA;
+    	cursor: pointer;
+    }
+    
+    #fullResumeButton:active{
+    	box-shadow: 0 0.1vw #666;
+    	transform: translateY(0.2vw);
+    }
+
+    #avatarBox {
+        display: block;
+        margin: auto;
+        position: relative;
+    }
+    
+    #avatar {
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+    }
+    
+    #avatar, #avatarBox {
+        width: 20vw;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        opacity: 0;
+        transition: 1s ease;
+        background-color: #008CBA;
+    }
+    
+    .overlayText {
+        color: white;
+        font-size: 1.2vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    #avatarBox:hover .overlay {
+        opacity: 0.8;
+    }
+    
+    .topnav{
+        background-color: #333;
+        overflow: hidden;
+        margin: auto;
+    }
+    
+    /*now underlined*/
+    .topnav a{
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1vw;
+        font-size: 1vw;
+        line-height: 1vw;
+    }
+    
+    .topnav a:hover{
+        background-color: #008CBA;
+        color: white;
+    }
+    
+    #gitDropdown {
+        float: left;
+        
+    }
+    
+    #gitDropdownOptions {
+        display: none;
+        position: absolute;
+        width: 12.5%;
+        z-index: 1;
+    }
+    
+    /*now underlined*/
+    #gitDropdownOptions a {
+        background-color: #008CBA;
+        color: white;
+        padding: 1vw;
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 3.01vw;
+    }
+    
+    #gitDropdownOptions a:hover {
+        background-color: #ecf2f9;
+        color: black;
+    }
+
+    #gitDropdown:hover #gitDropdownOptions {
+        display: block;
+    }
+
+    #emailLink {
+        text-decoration:none;
+    }
+    
+   #projects, #education, #skills, #blog {
+        display: none;
+    }
+
+    @media screen and (max-width: 600px){
+        [class*="col-"]{
+            width: 100%;
+        }
+        
+        .topnav a{
+            float: none;
+            width: 100%;
+            line-height: 2vw;
+            font-size: 2vw;
+        }
+        
+        #gitDropdown, #gitDropdownOptions, #gitDropdownOptions a{
+            float: none;
+            margin: auto;
+            width: 100%;
+        }
+        
+        #gitDropdownOptions a{
+            position: relative;
+            top: 0vw;
+            text-align: center;
+            width: 72.5vw;
+            float: left; 
+        }
+        
+    }
+        
+    .col-1 {width: 8.333333%;}
+    .col-2 {width: 16.666666%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.333333%;}
+    .col-5 {width: 41.666666%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.333333%;}
+    .col-8 {width: 66.666666%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.333333%;}
+    .col-11 {width: 91.666666%;}
+    .col-12 {width: 100%;}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+

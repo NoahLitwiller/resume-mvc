@@ -1,0 +1,90 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    padding: 1.6vw;
+    background: #f1f1f1;
+}
+
+.header {
+    padding: 1vw;
+    font-size: 3vw;
+    text-align: center;
+    background: white;
+}
+
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 1.6vw;
+}
+
+img {
+	width: 100%;
+	border-radius: 0.7vw;
+}
+
+.img {
+    background-color: #aaa;
+    width: 100%;
+    padding: 1.6vw;
+}
+
+.card {
+     background-color: white;
+     padding: 1.6vw;
+     margin-top: 1.6vw;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    padding: 1.6vw;
+    text-align: center;
+    background: #ddd;
+    margin-top: 1.6vw;
+}
+
+#homeLink, #homeLink:hover{
+	text-decoration: none;
+	color: #428bca;
+}
+
+#postsSidebar{
+	position: fixed;
+	right: 1vw;
+}
+
+.glyphicon{
+	color: #428bca;
+}
+
+.glyphicon-new-window:hover{
+	color: #0099CC;
+}
+
+#speedCurveLink:hover{
+	text-decoration: none;
+}
+
+#blogTitle, #tutorialTitle, #blogLink, #tutorialLink{
+	text-decoration: underline;
+}
+
+#blogLink, #tutorialLink{
+	color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}

@@ -1,0 +1,49 @@
+  * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family:"Times New Roman", Times, serif;
+        background-color: white;
+    }
+    
+    #titleblock {
+        text-align: center;
+        font-size: 2.4vw;
+    }
+    
+    .heading {
+        font-size: 2.2vw;
+        font-weight: bold;
+    }
+    
+    .bullet{
+        font-size: 1.9vw;
+    }
+    
+    .subbullet{
+        font-size: 1.7vw;
+    }
+    
+    #emailLink{
+        text-decoration:none;
+    }
+
+    @media screen and (max-width: 600px){
+        [class*="col-"]{
+            width: 100%;
+        }   
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
