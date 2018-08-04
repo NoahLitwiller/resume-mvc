@@ -1,0 +1,50 @@
+{
+	"name" : "Noah Litwiller's Blog",
+	"entries" : [
+		{
+			"title" : "Internship Reflection: The Agile Process",
+			"subtitle" : "Lessons learned from Agile",
+			"publishedDateString" : "07/19/2018",
+			"imageRef" : "",
+			"content" : "This summer I worked as an intern for Team Club Car at State Farm Insurance. Club Car is an agile team that works in a collaborative room rather than the more traditional cubicle setup. This open work environment encourages team members to work together and it also enables one of the most important characteristics of an agile environment: making work visible. This is accomplished primarily through team ceremonies including daily stand-up(s), retro, and sprint planning. During stand-up, team members give an update on the story, a small work assignment, they are working on. Retro allows the team to reflect on the previous sprint of work which then leads into a planning session for the next sprint. Sprint planning is when the team plans stories for the next spring. Sprints last one week and are contained in product increments which last eight sprints. All of these ceremonies involve communication which is another important aspect of the agile process. Frequent communication amongst team members is facilitated by the collaborative workspace. During this internship I learned how important asking questions and getting clarification from team members is when work needs to be completed within a weekly time constraint. I will be able to apply these communication skills in college during group projects and when communicating with my professors.",
+			"postId" : "internshipReflection_07_19_2018",
+			"type" : "text"		
+		},
+		{
+			"title" : "Internship Reflection: Technical Skills",
+			"subtitle" : "Spring MVC",
+			"publishedDateString" : "07/25/2018",
+			"imageRef" : "",
+			"content" : "The main focus of my internship at State Farm Insurance was to create a web application using Spring MVC. This allowed me to gain experience with basic web development languages including HTML, CSS, and JavaScript. I used HTML to create an outline for each of the views and gained experience using lists and different types of links and buttons. I also used divs and classes to simplify the styling process for similar sections. In the index view, I used JavaScript to show and hide each section of the resume. I used basic CSS to style the index view and the Bootstrap framework to style the blog view. It was especially helpful to use the Bootstrap framework in the blog view because styling the position, margin, border, and padding of each section individually would be very tedious. I also experimented with CSS animations and transitions.<br><br>The blog view differs from the index view in that it is dynamic. This means that the view doesn't only display content from an HTML file but also renders content that is referenced using JSP notation. This JSP code references the blog view's model which is an object created in the resume web application's controller. The controller handles HTTP requests and the switching of views. The model, view, and controller are the core components of Spring MVC.",
+			"postId" : "internshipReflection_07_25_2018",
+			"type" : "text"
+		},
+		{
+			"title" : "Animations with CSS",
+			"subtitle" : "A Color Changing Box",
+			"publishedDateString" : "07/24/2018",
+			"imageRef" : "",
+			"content" : "CSS animations are similar to CSS transitions but they can have more than two states and can transform more than one attribute at once. As with a CSS transition&#44 you will need to put the animation information within a style sheet.<br><br>The style syntax for an animation is <code>animation&#58 name duration timing-function delay iteration-count direction</code>. The code below shows the basic outline for this example&#58<br><img src=\"/NoahLitwiller/resources/images/Animation1.PNG\"><br><br>To add multiple states to the animation we will need to add an <code>@keyframes animationName</code> section to the style sheet&#58<br><img src=\"/NoahLitwiller/resources/images/Animation2.PNG\"><br>The <code>&ltdiv&gt</code> should now cycle between each color at the given intervals.",
+			"postId" : "cssAnimations_07_24_2018",
+			"type" : "tutorial"
+		},
+		{
+			"title" : "Transitions with CSS",
+			"subtitle" : "Changing the Background Color of an Element",
+			"publishedDateString" : "07/24/2018",
+			"imageRef" : "",
+			"content" : "CSS transitions can only <em>transition</em> from one state to another while CSS animations can have many different states.<br>A common use for CSS transitions is to modify an element on hover using the <code>&#58hover</code> selector.<br><br>Before you can implement a transition&#44 you must specify the style of the element's beginning and end states&#58<br><img src=\"/NoahLitwiller/resources/images/Transitions1.PNG\"><br><br>The format for styling a transition is <code>transition: attribute duration speedCurve delay;</code><br><a id=\"speedCurveLink\" href=\"https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp\" target=\"_blank\"><span class=\"glyphicon glyphicon-new-window\"></span>(click here to learn about the speed curve options)</a><br><br>Put this style in the beginning state section of your style sheet&#58<br><img src=\"/NoahLitwiller/resources/images/Transitions2.PNG\"><br>The background of the <code>&ltp&gt</code> tag will now transition from green to red when you hover over it with your mouse.",
+			"postId" : "cssTransitions_07_24_2018",
+			"type" : "tutorial"
+		},
+		{
+			"title" : "Dynamically Modifying HTML & CSS",
+			"subtitle" : "Using JavaScript",
+			"publishedDateString" : "07/23/2018",
+			"imageRef" : "",
+			"content" : "Start with your HTML and CSS&#58<br><img src=\"/NoahLitwiller/resources/images/DynamicallyModify1.PNG\"><br><br>The format for modifying an html element is <code>document.getElementById(&quotId&quot).someModifier = &quotnew attribute&quot&#59</code>. This line can only be executed within a <code>&ltscript&gt</code> tag which you will need to include in the <code>&ltbody&gt</code> section of your code&#58<br><img src=\"/NoahLitwiller/resources/images/DynamicallyModify2.PNG\"><br>The modifier <code>.innerHTML</code> allows you to change the text content of the element whose Id you specify. Be sure you have added the <code>id=&quotIdName&quot</code> attribute to the element you want to modify.<br><br>The <code>&ltp&gt</code> element has been given an Id of &quotp1&quot in the above example. When the code is run the <code>&ltp&gt</code> tag will now display as &quottest&quot.<br><br>CSS <code>&ltstyle&gt</code> attributes can also be modified using JavaScript. Adding <code>document.getElementById(&quotp1&quot).style.color = &quotblue&quot&#59</code> to the <code>&ltscript&gt</code> section of the code will change the color of the text within the <code>&ltp&gt</code> tag to blue.",
+			"postId" : "dynamicallyModifyHTMLandCSS_07_23_2018",
+			"type" : "tutorial"
+		}
+	]
+}
