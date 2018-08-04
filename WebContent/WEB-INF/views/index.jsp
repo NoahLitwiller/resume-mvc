@@ -10,7 +10,7 @@
 
 <body class="col-12">
    <div align="right">
-    <form action="${pageContext.request.contextPath}/resources/documents/fullResume.pdf" target="_blank">
+    <form action="${pageContext.request.contextPath}/resources/documents/CurrentResume.pdf" target="_blank">
         <input id="fullResumeButton" type="submit" value="View Full Resume"/>
     </form>
    </div>
